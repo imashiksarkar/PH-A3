@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rinterio</title>
+    <!-- daisyui cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- tailwindcss cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'gray-custom-600': '#737373',
+              'gray-custom-800': '#494949',
+              'gray-custom-100': '#E9E9E9',
+              'lime-custom-300': '#ABEF5F',
+              'gray-custom-900': '#212121',
+              'lime-custom-100': '#D4F7AE',
+            },
+          },
+        },
+      }
+    </script>
+
+    <!-- custom styles -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+      html {
+        scrollbar-gutter: auto !important;
+      }
+
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Manrope', sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-100 w-full min-h-screen">
+    <header>
+      <!-- Navbar Section -->
+      <nav>
+        <div
+          class="container flex justify-between gap-4 py-8 px-4 md:px-6 lg:px-8 mx-auto"
+        >
+          <!-- Logo -->
+          <a href="#" class="text-slate-900 flex items-center gap-2 grow">
+            <figure>
+              <svg
+                viewBox="0 0 33 33"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8"
+              >
+                <rect
+                  x="0.0106201"
+                  y="0.00292969"
+                  width="32"
+                  height="32"
+                  rx="16"
+                  transform="rotate(0.019056 0.0106201 0.00292969)"
+                  fill="#ABEF5F"
+                />
+                <path
+                  d="M21.007 11.01L10.0033 22.0063"
+                  stroke="#1C1C1C"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M15.0073 10.1393C15.0073 10.1393 20.6409 9.66633 21.4957 10.5215C22.3503 11.3767 21.8734 17.0101 21.8734 17.0101"
+                  stroke="#1C1C1C"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </figure>
+            <span class="text-[28px] font-extrabold">Rinterio</span>
+          </a>
+
+          <!-- nav links -->
+          <div class="nav__links flex items-center gap-24">
+            <div class="links hidden xl:block">
+              <ul class="flex gap-9 text-gray-custom-600">
+                <li>
+                  <a href="#" class="text-gray-custom-800 font-extrabold"
+                    >Home</a
+                  >
+                </li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+
+            <div class="buttons hidden md:flex gap-4">
+              <button
+                class="btn w-12 h-12 bg-white border-gray-custom-100 rounded-full"
+              >
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.5089 16.5085L21.0075 21.01M19.0111 10.0093C19.0128 5.03878 14.9847 1.008 10.0141 1.00635C5.04354 1.0047 1.01276 5.03279 1.01111 10.0034C1.00946 14.974 5.03756 19.0047 10.0081 19.0063C14.9787 19.008 19.0095 14.9799 19.0111 10.0093Z"
+                    stroke="#737373"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <button
+                class="btn w-12 h-12 bg-white border-gray-custom-100 rounded-full"
+              >
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.00554 15.0287L6.27149 15.1825L6.3964 15.7785L7.00529 15.7787L7.00554 15.0287ZM14.2687 15.0311L14.269 14.2811L14.2687 15.0311ZM20.2688 8.10218L19.5336 7.95389L19.5336 7.95392L20.2688 8.10218ZM20.3407 5.92819L19.7338 6.36889L19.7338 6.3689L20.3407 5.92819ZM18.4028 5.53247L18.403 4.78247L18.4028 5.53247ZM5.00895 4.77802C4.59473 4.77788 4.25883 5.11356 4.2587 5.52777C4.25856 5.94198 4.59423 6.27788 5.00845 6.27802L5.00895 4.77802ZM4.38842 2.54274L5.12247 2.38888L5.11954 2.37492L5.11609 2.36109L4.38842 2.54274ZM2.44864 1.02717L2.44889 0.277168L2.44864 1.02717ZM1.51044 0.276856C1.09623 0.276718 0.760331 0.612392 0.760193 1.02661C0.760055 1.44082 1.09573 1.77672 1.50994 1.77686L1.51044 0.276856ZM7.88529 15.779C8.2995 15.7791 8.6354 15.4434 8.63554 15.0292C8.63567 14.615 8.3 14.2791 7.88578 14.279L7.88529 15.779ZM7.47411 15.0288L7.47386 15.7788L7.47386 15.7788L7.47411 15.0288ZM5.00468 17.5994L4.25468 17.5992L5.00468 17.5994ZM5.41597 18.0282L5.41572 18.7782L5.41572 18.7782L5.41597 18.0282ZM16.5045 18.0318L16.5048 17.2818L16.5048 17.2818L16.5045 18.0318ZM11.004 19.53L11.754 19.5303L11.004 19.53ZM9.50354 21.0295L9.50379 20.2795L9.50354 21.0295ZM8.00404 19.529L8.75404 19.5293L8.00404 19.529ZM9.50454 18.0295L9.50479 17.2795L9.50454 18.0295ZM18.004 19.5323L18.754 19.5326L18.004 19.5323ZM16.5035 21.0318L16.5038 20.2818L16.5035 21.0318ZM15.004 19.5313L15.754 19.5316L15.004 19.5313ZM7.00529 15.7787L14.2685 15.7811L14.269 14.2811L7.00579 14.2787L7.00529 15.7787ZM14.2685 15.7811C15.4664 15.7815 16.4652 15.594 17.2983 15.2077C18.1401 14.8174 18.7728 14.2426 19.2593 13.5331C20.1982 12.1637 20.5979 10.2645 21.004 8.25043L19.5336 7.95392C19.1107 10.0513 18.7542 11.6173 18.0222 12.6849C17.6732 13.1939 17.2419 13.5805 16.6674 13.8468C16.0844 14.1172 15.3149 14.2814 14.269 14.2811L14.2685 15.7811ZM21.004 8.25046C21.1194 7.67825 21.2222 7.17669 21.2503 6.77042C21.2793 6.35095 21.2418 5.89277 20.9475 5.48748L19.7338 6.3689C19.7343 6.36956 19.7412 6.37673 19.7481 6.412C19.7565 6.45493 19.7632 6.53221 19.7539 6.66689C19.7341 6.95235 19.6574 7.34021 19.5336 7.95389L21.004 8.25046ZM20.9475 5.48749C20.6418 5.06645 20.2095 4.90759 19.7947 4.8416C19.4112 4.78057 18.9276 4.78265 18.403 4.78247L18.4025 6.28247C18.9786 6.28267 19.3205 6.28502 19.559 6.32296C19.6676 6.34025 19.7151 6.35981 19.7312 6.368C19.7378 6.37137 19.7381 6.37229 19.7354 6.37007C19.7327 6.36773 19.732 6.3664 19.7338 6.36889L20.9475 5.48749ZM18.403 4.78247L5.00895 4.77802L5.00845 6.27802L18.4025 6.28247L18.403 4.78247ZM7.73958 14.8748L5.12247 2.38888L3.65437 2.6966L6.27149 15.1825L7.73958 14.8748ZM5.11609 2.36109C4.81045 1.13676 3.71077 0.277587 2.44889 0.277168L2.44839 1.77717C3.02198 1.77736 3.52182 2.16789 3.66075 2.7244L5.11609 2.36109ZM2.44889 0.277168L1.51044 0.276856L1.50994 1.77686L2.44839 1.77717L2.44889 0.277168ZM7.88578 14.279L7.47435 14.2788L7.47386 15.7788L7.88529 15.779L7.88578 14.279ZM7.47436 14.2788C5.66823 14.2782 4.25528 15.794 4.25468 17.5992L5.75468 17.5997C5.75503 16.5646 6.55328 15.7785 7.47386 15.7788L7.47436 14.2788ZM4.25468 17.5992C4.25447 18.2209 4.74565 18.7779 5.41572 18.7782L5.41622 17.2782C5.63182 17.2782 5.75473 17.4514 5.75468 17.5997L4.25468 17.5992ZM5.41572 18.7782L16.5043 18.7818L16.5048 17.2818L5.41622 17.2782L5.41572 18.7782ZM10.254 19.5298C10.2539 19.944 9.918 20.2797 9.50379 20.2795L9.50329 21.7795C10.7459 21.7799 11.7536 20.7729 11.754 19.5303L10.254 19.5298ZM9.50379 20.2795C9.08958 20.2794 8.7539 19.9435 8.75404 19.5293L7.25404 19.5288C7.25363 20.7714 8.26065 21.7791 9.50329 21.7795L9.50379 20.2795ZM8.75404 19.5293C8.75418 19.1151 9.09008 18.7794 9.50429 18.7795L9.50479 17.2795C8.26215 17.2791 7.25445 18.2861 7.25404 19.5288L8.75404 19.5293ZM9.50429 18.7795C9.9185 18.7797 10.2542 19.1156 10.254 19.5298L11.754 19.5303C11.7545 18.2876 10.7474 17.2799 9.50479 17.2795L9.50429 18.7795ZM17.254 19.5321C17.2539 19.9463 16.918 20.282 16.5038 20.2818L16.5033 21.7818C17.7459 21.7823 18.7536 20.7752 18.754 19.5326L17.254 19.5321ZM16.5038 20.2818C16.0896 20.2817 15.7539 19.9458 15.754 19.5316L14.254 19.5311C14.2536 20.7737 15.2606 21.7814 16.5033 21.7818L16.5038 20.2818ZM15.754 19.5316C15.7542 19.1174 16.0901 18.7817 16.5043 18.7818L16.5048 17.2818C15.2621 17.2814 14.2545 18.2885 14.254 19.5311L15.754 19.5316ZM16.5043 18.7818C16.9185 18.782 17.2542 19.1179 17.254 19.5321L18.754 19.5326C18.7545 18.29 17.7474 17.2823 16.5048 17.2818L16.5043 18.7818Z"
+                    fill="#737373"
+                  />
+                </svg>
+              </button>
+              <a
+                href="#"
+                class="flex items-center justify-center gap-2 bg-lime-custom-300 rounded-full py-2.5 px-5"
+                ><span class="text-xl font-extrabold text-gray-custom-900"
+                  >Book Consult</span
+                >
+                <figure class="p-2.5 rounded-full bg-gray-custom-900">
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.0149 2.104L1.01128 13.1003M6.01522 1.23351C6.01522 1.23351 11.6489 0.760493 12.5036 1.61569C13.3582 2.47089 12.8813 8.10428 12.8813 8.10428"
+                      stroke="#fff"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </figure>
+              </a>
+            </div>
+          </div>
+
+          <!-- Toggle Button -->
+          <button
+            class="w-12 h-12 btn flex items-center justify-center border-2 border-slate-200 rounded-full bg-white xl:hidden"
+          >
+            <figure>
+              <svg
+                width="18"
+                height="13"
+                viewBox="0 0 18 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.757935 0.875H17.2579M0.757935 6.125H17.2579M0.757935 11.375H17.2579"
+                  stroke="#737373"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </figure>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <section class="hero bg-gradient-to-t from-white to-white/0">
+        <div
+          class="container mx-auto px-4 md:px-6 lg:px-8 pb-10 flex flex-col items-center gap-6"
+        >
+          <figure class="max-w-[424px] xl:max-w-[571px]">
+            <img src="./assets/banner.png" alt="hero-banner" class="w-full" />
+          </figure>
+          <h1
+            class="text-[28px] md:text-4xl xl:text-[64px] xl:leading-[87px] font-extrabold text-center text-gray-custom-900 leading-8"
+          >
+            A barn house of this design has a striking appearance
+          </h1>
+          <p
+            class="text-sm max-w-[55ch] lg:max-w-[95ch] md:text-base font-medium leading-6 md:leading-[26px] text-center text-gray-custom-800"
+          >
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents, and
+            large windows that flood the space with natural light.
+          </p>
+          <a
+            href="#"
+            class="w-full flex items-center justify-center gap-2 bg-lime-custom-100 rounded-full py-3 px-6 border-2 border-lime-custom-300 md:w-max"
+            ><span class="text-xl font-bold text-gray-custom-900"
+              >View Details</span
+            >
+            <figure class="p-2.5 rounded-full bg-lime-custom-300">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.0149 2.104L1.01128 13.1003M6.01522 1.23351C6.01522 1.23351 11.6489 0.760493 12.5036 1.61569C13.3582 2.47089 12.8813 8.10428 12.8813 8.10428"
+                  stroke="#1C1C1C"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </figure>
+          </a>
+        </div>
+      </section>
+    </header>
+  </body>
+</html>
