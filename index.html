@@ -33,10 +33,6 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
-      html {
-        scrollbar-gutter: auto !important;
-      }
-
       *,
       *::before,
       *::after {
@@ -44,11 +40,13 @@
         padding: 0;
         box-sizing: border-box;
         font-family: 'Manrope', sans-serif;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
       }
     </style>
   </head>
 
-  <body class="bg-gray-100 w-full min-h-screen">
+  <body class="bg-gray-100 w-full min-h-screen scroll">
     <header>
       <!-- Navbar Section -->
       <nav>
