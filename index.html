@@ -17,12 +17,18 @@
         theme: {
           extend: {
             colors: {
-              'gray-custom-600': '#737373',
-              'gray-custom-800': '#494949',
-              'gray-custom-100': '#E9E9E9',
-              'lime-custom-300': '#ABEF5F',
-              'gray-custom-900': '#212121',
-              'lime-custom-100': '#D4F7AE',
+              'gray-c-100': '#1C1C1C',
+              'gray-c-200': '#737373',
+              'gray-c-300': '#494949',
+              'gray-c-400': '#E9E9E9',
+              'gray-c-500': '#212121',
+              'lime-c-200': '#D4F7AE',
+              'lime-c-400': '#ABEF5F',
+              'pink-c-200': '#E7C1D3',
+              'yellow-c-300': '#EFDA6E',
+              'teal-c-200': '#A4DAC3',
+              'blue-c-400': '#77AAEA',
+              'green-c-100': '#EEFCDF',
             },
           },
         },
@@ -92,9 +98,9 @@
           <!-- nav links -->
           <div class="nav__links flex items-center gap-24">
             <div class="links hidden xl:block">
-              <ul class="flex gap-9 text-gray-custom-600">
+              <ul class="flex gap-9 text-gray-c-200">
                 <li>
-                  <a href="#" class="text-gray-custom-800 font-extrabold"
+                  <a href="#" class="text-gray-c-300 font-extrabold"
                     >Home</a
                   >
                 </li>
@@ -107,7 +113,7 @@
 
             <div class="buttons hidden md:flex gap-4">
               <button
-                class="btn w-12 h-12 bg-white border-gray-custom-100 rounded-full"
+                class="btn w-12 h-12 bg-white border-gray-c-400 rounded-full"
               >
                 <svg
                   width="22"
@@ -126,7 +132,7 @@
                 </svg>
               </button>
               <button
-                class="btn w-12 h-12 bg-white border-gray-custom-100 rounded-full"
+                class="btn w-12 h-12 bg-white border-gray-c-400 rounded-full"
               >
                 <svg
                   width="22"
@@ -143,11 +149,11 @@
               </button>
               <a
                 href="#"
-                class="flex items-center justify-center gap-2 bg-lime-custom-300 rounded-full py-2.5 px-5"
-                ><span class="text-xl font-extrabold text-gray-custom-900"
+                class="flex items-center justify-center gap-2 bg-lime-c-400 rounded-full py-2.5 px-5"
+                ><span class="text-xl font-extrabold text-gray-c-500"
                   >Book Consult</span
                 >
-                <figure class="p-2.5 rounded-full bg-gray-custom-900">
+                <figure class="p-2.5 rounded-full bg-gray-c-500">
                   <svg
                     width="14"
                     height="14"
@@ -202,12 +208,12 @@
             <img src="./assets/banner.png" alt="hero-banner" class="w-full" />
           </figure>
           <h1
-            class="text-[28px] md:text-4xl xl:text-[64px] xl:leading-[87px] font-extrabold text-center text-gray-custom-900 leading-8"
+            class="text-[28px] md:text-4xl xl:text-[64px] xl:leading-[87px] font-extrabold text-center text-gray-c-500 leading-8"
           >
             A barn house of this design has a striking appearance
           </h1>
           <p
-            class="text-sm max-w-[55ch] lg:max-w-[95ch] md:text-base font-medium leading-6 md:leading-[26px] text-center text-gray-custom-800"
+            class="text-sm max-w-[55ch] lg:max-w-[95ch] md:text-base font-medium leading-6 md:leading-[26px] text-center text-gray-c-300"
           >
             The barn house captivates with its blend of rustic charm and modern
             sophistication, featuring weathered wood, sleek metal accents, and
@@ -215,11 +221,11 @@
           </p>
           <a
             href="#"
-            class="w-full flex items-center justify-center gap-2 bg-lime-custom-100 rounded-full py-3 px-6 border-2 border-lime-custom-300 md:w-max"
-            ><span class="text-xl font-bold text-gray-custom-900"
+            class="w-full flex items-center justify-center gap-2 bg-lime-c-200 rounded-full py-3 px-6 border-2 border-lime-c-400 md:w-max"
+            ><span class="text-xl font-bold text-gray-c-500"
               >View Details</span
             >
-            <figure class="p-2.5 rounded-full bg-lime-custom-300">
+            <figure class="p-2.5 rounded-full bg-lime-c-400">
               <svg
                 width="14"
                 height="14"
@@ -272,12 +278,12 @@
                   />
                 </svg>
               </figure>
-              <span class="font-bold text-[#494949]">About Us</span>
+              <span class="font-bold text-gray-c-300">About Us</span>
             </h4>
-            <h1 class="text-2xl font-bold text-[#212121] text-center">
+            <h1 class="text-2xl font-bold text-gray-c-500 text-center">
               We design thoughtful, liveable spaces
             </h1>
-            <p class="text-sm text-[#494949] font-medium leading-6">
+            <p class="text-sm text-gray-c-300 font-medium leading-6">
               The barn house captivates with its blend of rustic charm and
               modern sophistication, featuring weathered wood, sleek metal
               accents.
@@ -293,8 +299,8 @@
                 class="basis-2 h-min"
               />
               <div class="box-details">
-                <h6 class="text-[#494949] font-extrabold">Commercial</h6>
-                <p class="font-medium text-[#737373] leading-[26px] mt-[10px]">
+                <h6 class="text-gray-c-300 font-extrabold">Commercial</h6>
+                <p class="font-medium text-gray-c-200 leading-[26px] mt-[10px]">
                   The barn house captivates with its blend of rustic charm and
                   modern.
                 </p>
@@ -304,8 +310,8 @@
             <div class="grid grid-cols-[1fr_7fr] gap-4 p-5 bg-white rounded-xl">
               <img src="./assets/residential.png" alt="residential" />
               <div class="box-details">
-                <h6 class="text-[#494949] font-extrabold">Residential</h6>
-                <p class="font-medium text-[#737373] leading-[26px] mt-[10px]">
+                <h6 class="text-gray-c-300 font-extrabold">Residential</h6>
+                <p class="font-medium text-gray-c-200 leading-[26px] mt-[10px]">
                   The barn house captivates with its blend of rustic charm and
                   modern.
                 </p>
@@ -339,32 +345,32 @@
                   alt="message-icon"
                 />
               </figure>
-              <h2 class="text-[32px] text-[#494949] font-extrabold">235+</h2>
-              <p class="font-medium text-[#737373]">Happy Client Review</p>
+              <h2 class="text-[32px] text-gray-c-300 font-extrabold">235+</h2>
+              <p class="font-medium text-gray-c-200">Happy Client Review</p>
             </div>
             <!-- box 2 -->
             <div class="flex flex-col items-center p-5">
               <figure>
                 <img class="w-8" src="./assets/work.png" alt="work-icon" />
               </figure>
-              <h2 class="text-[32px] text-[#494949] font-extrabold">50+</h2>
-              <p class="font-medium text-[#737373]">Work Departments</p>
+              <h2 class="text-[32px] text-gray-c-300 font-extrabold">50+</h2>
+              <p class="font-medium text-gray-c-200">Work Departments</p>
             </div>
             <!-- box 3 -->
             <div class="flex flex-col items-center p-5">
               <figure>
                 <img class="w-8" src="./assets/client.png" alt="client-icon" />
               </figure>
-              <h2 class="text-[32px] text-[#494949] font-extrabold">30k+</h2>
-              <p class="font-medium text-[#737373]">Our Happy Client</p>
+              <h2 class="text-[32px] text-gray-c-300 font-extrabold">30k+</h2>
+              <p class="font-medium text-gray-c-200">Our Happy Client</p>
             </div>
             <!-- box 4 -->
             <div class="flex flex-col items-center p-5">
               <figure>
                 <img class="w-8" src="./assets/staff.png" alt="staff-icon" />
               </figure>
-              <h2 class="text-[32px] text-[#494949] font-extrabold">307+</h2>
-              <p class="font-medium text-[#737373]">Staff Members</p>
+              <h2 class="text-[32px] text-gray-c-300 font-extrabold">307+</h2>
+              <p class="font-medium text-gray-c-200">Staff Members</p>
             </div>
           </div>
         </div>
@@ -398,12 +404,12 @@
                   />
                 </svg>
               </figure>
-              <span class="font-bold text-[#494949]">How we work</span>
+              <span class="font-bold text-gray-c-300">How we work</span>
             </h4>
-            <h1 class="text-2xl font-bold text-[#212121] text-center">
+            <h1 class="text-2xl font-bold text-gray-c-500 text-center">
               Our Works Process
             </h1>
-            <p class="text-sm text-[#494949] font-medium leading-6">
+            <p class="text-sm text-gray-c-300 font-medium leading-6">
               The barn house captivates with its blend of rustic charm and
               modern sophistication, featuring weathered wood, sleek metal
               accents.
@@ -411,53 +417,53 @@
           </header>
 
           <!-- box 1 -->
-          <div class="p-6 bg-[#E7C1D3] rounded-3xl grid gap-[10px]">
+          <div class="p-6 bg-pink-c-200 rounded-3xl grid gap-[10px]">
             <figure class="w-12">
               <img src="./assets/concept.png" alt="bulb-icon" />
             </figure>
-            <h3 class="text-xl font-extrabold leading-[26px] text-[#1C1C1C]">
+            <h3 class="text-xl font-extrabold leading-[26px] text-gray-c-100">
               Concept
             </h3>
-            <p class="font-medium leading-[26px] text-[#494949]">
+            <p class="font-medium leading-[26px] text-gray-c-300">
               The barn house captivates with its blend of rustic charm and
               modern.
             </p>
           </div>
           <!-- box 2 -->
-          <div class="p-6 bg-[#EFDA6E] rounded-3xl grid gap-[10px]">
+          <div class="p-6 bg-yellow-c-300 rounded-3xl grid gap-[10px]">
             <figure class="w-12">
               <img src="./assets/flow-chart.png" alt="flow_chart-icon" />
             </figure>
-            <h3 class="text-xl font-extrabold leading-[26px] text-[#1C1C1C]">
+            <h3 class="text-xl font-extrabold leading-[26px] text-gray-c-100">
               Design Process
             </h3>
-            <p class="font-medium leading-[26px] text-[#494949]">
+            <p class="font-medium leading-[26px] text-gray-c-300">
               The barn house captivates with its blend of rustic charm and
               modern.
             </p>
           </div>
           <!-- box 3 -->
-          <div class="p-6 bg-[#A4DAC3] rounded-3xl grid gap-[10px]">
+          <div class="p-6 bg-teal-c-200 rounded-3xl grid gap-[10px]">
             <figure class="w-12">
               <img src="./assets/vision.png" alt="vision-icon" />
             </figure>
-            <h3 class="text-xl font-extrabold leading-[26px] text-[#1C1C1C]">
+            <h3 class="text-xl font-extrabold leading-[26px] text-gray-c-100">
               Supervision
             </h3>
-            <p class="font-medium leading-[26px] text-[#494949]">
+            <p class="font-medium leading-[26px] text-gray-c-300">
               The barn house captivates with its blend of rustic charm and
               modern.
             </p>
           </div>
           <!-- box 4 -->
-          <div class="p-6 bg-[#77AAEA] rounded-3xl grid gap-[10px]">
+          <div class="p-6 bg-blue-c-400 rounded-3xl grid gap-[10px]">
             <figure class="w-12">
               <img src="./assets/budget-planning.png" alt="budget-icon" />
             </figure>
-            <h3 class="text-xl font-extrabold leading-[26px] text-[#1C1C1C]">
+            <h3 class="text-xl font-extrabold leading-[26px] text-gray-c-100">
               Budget Planning
             </h3>
-            <p class="font-medium leading-[26px] text-[#494949]">
+            <p class="font-medium leading-[26px] text-gray-c-300">
               The barn house captivates with its blend of rustic charm and
               modern.
             </p>
@@ -474,7 +480,7 @@
             class="flex flex-col items-center text-center gap-4 mb-2 md:col-span-2 xl:col-span-12"
           >
             <h4
-              class="flex items-center gap-4 bg-[#EEFCDF] px-4 py-2 w-max rounded-full"
+              class="flex items-center gap-4 bg-green-c-100 px-4 py-2 w-max rounded-full"
             >
               <figure>
                 <svg
@@ -493,14 +499,14 @@
                   />
                 </svg>
               </figure>
-              <span class="font-bold text-[#494949]"
+              <span class="font-bold text-gray-c-300"
                 >Explore our Latest works</span
               >
             </h4>
-            <h1 class="text-2xl font-bold text-[#212121] text-center">
+            <h1 class="text-2xl font-bold text-gray-c-500 text-center">
               Our Latest Portfolio
             </h1>
-            <p class="text-sm text-[#494949] font-medium leading-6">
+            <p class="text-sm text-gray-c-300 font-medium leading-6">
               The barn house captivates with its blend of rustic charm and
               modern sophistication, featuring weathered wood, sleek metal
               accents.
@@ -520,19 +526,19 @@
                 alt="home-img"
               />
             </figure>
-            <h3 class="text-xl font-extrabold leading-[26px] text-[#494949]">
+            <h3 class="text-xl font-extrabold leading-[26px] text-gray-c-300">
               Commercial
             </h3>
-            <p class="font-medium leading-[26px] text-[#737373] mb-1">
+            <p class="font-medium leading-[26px] text-gray-c-200 mb-1">
               The barn house captivates with its blend of rustic charm and
               modern. The barn house captivates with its blend of rustic charm
               and modern .
             </p>
             <a href="#" class="flex items-center gap-[10px]"
-              ><span class="text-xl font-bold text-gray-custom-900"
+              ><span class="text-xl font-bold text-gray-c-500"
                 >View Details</span
               >
-              <figure class="p-2.5 rounded-full bg-lime-custom-300">
+              <figure class="p-2.5 rounded-full bg-lime-c-400">
                 <svg
                   width="14"
                   height="14"
@@ -586,19 +592,19 @@
             <figure class="w-full mb-2 md:row-span-3 aspect-[3/2]">
               <img class="w-full" src="./assets/home-4.png" alt="home-4-img" />
             </figure>
-            <h3 class="text-xl font-extrabold leading-[26px] text-[#494949]">
+            <h3 class="text-xl font-extrabold leading-[26px] text-gray-c-300">
               Commercial
             </h3>
-            <p class="font-medium leading-[26px] text-[#737373] mb-1">
+            <p class="font-medium leading-[26px] text-gray-c-200 mb-1">
               The barn house captivates with its blend of rustic charm and
               modern. The barn house captivates with its blend of rustic charm
               and modern .
             </p>
             <a href="#" class="flex items-center gap-[10px]"
-              ><span class="text-xl font-bold text-gray-custom-900"
+              ><span class="text-xl font-bold text-gray-c-500"
                 >View Details</span
               >
-              <figure class="p-2.5 rounded-full bg-lime-custom-300">
+              <figure class="p-2.5 rounded-full bg-lime-c-400">
                 <svg
                   width="14"
                   height="14"
@@ -655,7 +661,7 @@
             class="flex flex-col items-center text-center gap-4 mb-2 lg:col-span-3"
           >
             <h4
-              class="flex items-center gap-4 bg-[#EEFCDF] px-4 py-2 w-max rounded-full"
+              class="flex items-center gap-4 bg-green-c-100 px-4 py-2 w-max rounded-full"
             >
               <figure>
                 <svg
@@ -674,12 +680,12 @@
                   />
                 </svg>
               </figure>
-              <span class="font-bold text-[#494949]">Rinterio News</span>
+              <span class="font-bold text-gray-c-300">Rinterio News</span>
             </h4>
-            <h1 class="text-2xl font-bold text-[#212121] text-center">
+            <h1 class="text-2xl font-bold text-gray-c-500 text-center">
               Read Our Article and News
             </h1>
-            <p class="text-sm text-[#494949] font-medium leading-6">
+            <p class="text-sm text-gray-c-300 font-medium leading-6">
               The barn house captivates with its blend of rustic charm and
               modern sophistication, featuring weathered wood, sleek metal
               accents.
@@ -704,7 +710,7 @@
                 <figure class="w-5">
                   <img src="./assets/calender.png" alt="calender-icon" />
                 </figure>
-                <span class="text-sm font-medium text-[#737373]"
+                <span class="text-sm font-medium text-gray-c-200"
                   >July14, 2024</span
                 >
               </div>
@@ -712,21 +718,21 @@
                 <figure class="w-5">
                   <img src="./assets/avatar.png" alt="avatar-icon" />
                 </figure>
-                <span class="text-sm font-medium text-[#737373]">By Admin</span>
+                <span class="text-sm font-medium text-gray-c-200">By Admin</span>
               </div>
             </div>
-            <h3 class="text-xl font-extrabold leading-[30px] text-[#494949]">
+            <h3 class="text-xl font-extrabold leading-[30px] text-gray-c-300">
               How to choose the furniture right of your home.
             </h3>
-            <p class="font-medium leading-[26px] text-[#737373] mb-1">
+            <p class="font-medium leading-[26px] text-gray-c-200 mb-1">
               The barn house captivates with its blend of rustic charm and
               modern.
             </p>
             <a href="#" class="flex items-center gap-[10px]"
-              ><span class="text-xl font-bold text-gray-custom-900"
+              ><span class="text-xl font-bold text-gray-c-500"
                 >Read More</span
               >
-              <figure class="p-2.5 rounded-full bg-lime-custom-300">
+              <figure class="p-2.5 rounded-full bg-lime-c-400">
                 <svg
                   width="14"
                   height="14"
@@ -763,7 +769,7 @@
                 <figure class="w-5">
                   <img src="./assets/calender.png" alt="calender-icon" />
                 </figure>
-                <span class="text-sm font-medium text-[#737373]"
+                <span class="text-sm font-medium text-gray-c-200"
                   >July14, 2024</span
                 >
               </div>
@@ -771,21 +777,21 @@
                 <figure class="w-5">
                   <img src="./assets/avatar.png" alt="avatar-icon" />
                 </figure>
-                <span class="text-sm font-medium text-[#737373]">By Admin</span>
+                <span class="text-sm font-medium text-gray-c-200">By Admin</span>
               </div>
             </div>
-            <h3 class="text-xl font-extrabold leading-[30px] text-[#494949]">
+            <h3 class="text-xl font-extrabold leading-[30px] text-gray-c-300">
               How to choose the furniture right of your home.
             </h3>
-            <p class="font-medium leading-[26px] text-[#737373] mb-1">
+            <p class="font-medium leading-[26px] text-gray-c-200 mb-1">
               The barn house captivates with its blend of rustic charm and
               modern.
             </p>
             <a href="#" class="flex items-center gap-[10px]"
-              ><span class="text-xl font-bold text-gray-custom-900"
+              ><span class="text-xl font-bold text-gray-c-500"
                 >Read More</span
               >
-              <figure class="p-2.5 rounded-full bg-lime-custom-300">
+              <figure class="p-2.5 rounded-full bg-lime-c-400">
                 <svg
                   width="14"
                   height="14"
@@ -822,7 +828,7 @@
                 <figure class="w-5">
                   <img src="./assets/calender.png" alt="calender-icon" />
                 </figure>
-                <span class="text-sm font-medium text-[#737373]"
+                <span class="text-sm font-medium text-gray-c-200"
                   >July14, 2024</span
                 >
               </div>
@@ -830,21 +836,21 @@
                 <figure class="w-5">
                   <img src="./assets/avatar.png" alt="avatar-icon" />
                 </figure>
-                <span class="text-sm font-medium text-[#737373]">By Admin</span>
+                <span class="text-sm font-medium text-gray-c-200">By Admin</span>
               </div>
             </div>
-            <h3 class="text-xl font-extrabold leading-[30px] text-[#494949]">
+            <h3 class="text-xl font-extrabold leading-[30px] text-gray-c-300">
               How to choose the furniture right of your home.
             </h3>
-            <p class="font-medium leading-[26px] text-[#737373] mb-1">
+            <p class="font-medium leading-[26px] text-gray-c-200 mb-1">
               The barn house captivates with its blend of rustic charm and
               modern.
             </p>
             <a href="#" class="flex items-center gap-[10px]"
-              ><span class="text-xl font-bold text-gray-custom-900"
+              ><span class="text-xl font-bold text-gray-c-500"
                 >Read More</span
               >
-              <figure class="p-2.5 rounded-full bg-lime-custom-300">
+              <figure class="p-2.5 rounded-full bg-lime-c-400">
                 <svg
                   width="14"
                   height="14"
@@ -873,7 +879,7 @@
           <!-- header -->
           <header class="flex flex-col items-center text-center gap-4 mb-2">
             <h4
-              class="flex items-center gap-4 bg-[#EEFCDF] px-4 py-2 w-max rounded-full"
+              class="flex items-center gap-4 bg-green-c-100 px-4 py-2 w-max rounded-full"
             >
               <figure>
                 <svg
@@ -892,13 +898,13 @@
                   />
                 </svg>
               </figure>
-              <span class="font-bold text-[#494949]">Happy Testimonials</span>
+              <span class="font-bold text-gray-c-300">Happy Testimonials</span>
             </h4>
-            <h1 class="text-2xl font-bold text-[#212121] text-center">
+            <h1 class="text-2xl font-bold text-gray-c-500 text-center">
               See what our clients say
             </h1>
             <p
-              class="text-sm text-[#494949] font-medium leading-6 max-w-[65ch]"
+              class="text-sm text-gray-c-300 font-medium leading-6 max-w-[65ch]"
             >
               The barn house captivates with its blend of rustic charm and
               modern sophistication, featuring weathered wood, sleek metal
@@ -909,7 +915,9 @@
           <!-- horizontal scroll -->
           <div class="max-w-full flex gap-4 overflow-x-scroll p-4">
             <!-- review 1 -->
-            <div class="p-4 bg-white rounded-2xl grid gap-4 min-w-72 max-w-80 drop-shadow-lg">
+            <div
+              class="p-4 bg-white rounded-2xl grid gap-4 min-w-72 max-w-80 drop-shadow-lg"
+            >
               <h2 class="text-xl font-extrabold text-slate-700">
                 I had the pleasure of partnering with Decraft for my home
                 renovation project, and I must say, they exceeded all my
@@ -932,7 +940,9 @@
               </div>
             </div>
             <!-- review 2 -->
-            <div class="p-4 bg-white rounded-2xl grid gap-4 min-w-72 max-w-80 drop-shadow-lg">
+            <div
+              class="p-4 bg-white rounded-2xl grid gap-4 min-w-72 max-w-80 drop-shadow-lg"
+            >
               <h2 class="text-xl font-extrabold text-slate-700">
                 I had the pleasure of partnering with Decraft for my home
                 renovation project, and I must say, they exceeded all my
@@ -955,7 +965,9 @@
               </div>
             </div>
             <!-- review 3 -->
-            <div class="p-4 bg-white rounded-2xl grid gap-4 min-w-72 max-w-80 drop-shadow-lg">
+            <div
+              class="p-4 bg-white rounded-2xl grid gap-4 min-w-72 max-w-80 drop-shadow-lg"
+            >
               <h2 class="text-xl font-extrabold text-slate-700">
                 I had the pleasure of partnering with Decraft for my home
                 renovation project, and I must say, they exceeded all my
@@ -1016,7 +1028,7 @@
           <!-- header -->
           <header class="flex flex-col items-center text-center gap-4 mb-2">
             <h4
-              class="flex items-center gap-4 bg-[#EEFCDF] px-4 py-2 w-max rounded-full"
+              class="flex items-center gap-4 bg-green-c-100 px-4 py-2 w-max rounded-full"
             >
               <figure>
                 <svg
@@ -1035,13 +1047,13 @@
                   />
                 </svg>
               </figure>
-              <span class="font-bold text-[#494949]">Let’s Connect</span>
+              <span class="font-bold text-gray-c-300">Let’s Connect</span>
             </h4>
-            <h1 class="text-2xl font-bold text-[#212121] text-center">
+            <h1 class="text-2xl font-bold text-gray-c-500 text-center">
               Let’s Discuss Next Project
             </h1>
             <p
-              class="text-sm text-[#494949] font-medium leading-6 max-w-[65ch]"
+              class="text-sm text-gray-c-300 font-medium leading-6 max-w-[65ch]"
             >
               The barn house captivates with its blend of rustic charm and
               modern sophistication, featuring weathered wood, sleek metal
@@ -1084,12 +1096,12 @@
             ></textarea>
             <button
               type="submit"
-              class="w-full flex items-center justify-center gap-2 rounded-full py-3 px-5 bg-lime-custom-300 md:col-span-2"
+              class="w-full flex items-center justify-center gap-2 rounded-full py-3 px-5 bg-lime-c-400 md:col-span-2"
             >
-              <span class="text-xl font-extrabold text-gray-custom-900"
+              <span class="text-xl font-extrabold text-gray-c-500"
                 >Send Mail</span
               >
-              <figure class="p-2.5 rounded-full bg-gray-custom-900">
+              <figure class="p-2.5 rounded-full bg-gray-c-500">
                 <svg
                   width="14"
                   height="14"
@@ -1112,7 +1124,7 @@
       </section>
     </main>
     <!-- Footer Section -->
-    <footer class="bg-[#1C1C1C]">
+    <footer class="bg-gray-c-100">
       <div
         class="container px-4 md:px-6 lg:px-8 mx-auto py-20 flex flex-col items-center gap-8"
       >
@@ -1153,7 +1165,7 @@
             </figure>
             <span class="text-[28px] font-extrabold">Rinterio</span>
           </a>
-          <p class="font-medium leading-[26px] text-[#737373] max-w-[65ch]">
+          <p class="font-medium leading-[26px] text-gray-c-200 max-w-[65ch]">
             The barn house captivates with its blend of rustic charm and modern
             sophistication, featuring weathered wood, sleek metal accents.
           </p>
@@ -1173,11 +1185,11 @@
         <!-- cta button -->
         <a
           href="#"
-          class="flex items-center justify-center gap-2 bg-lime-custom-300 rounded-full py-2.5 px-5"
-          ><span class="text-xl font-extrabold text-gray-custom-900"
+          class="flex items-center justify-center gap-2 bg-lime-c-400 rounded-full py-2.5 px-5"
+          ><span class="text-xl font-extrabold text-gray-c-500"
             >Book Consult</span
           >
-          <figure class="p-2.5 rounded-full bg-gray-custom-900">
+          <figure class="p-2.5 rounded-full bg-gray-c-500">
             <svg
               width="14"
               height="14"
